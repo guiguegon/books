@@ -185,8 +185,8 @@ header .device-container {
   max-width: 300px;
   margin: 0 auto 100px;
 }
-header .device-container .screen img {
-  border-radius: 3px;
+header .device-container img {
+  border-radius: 4px;
 }
 @media (min-width: 768px) {
   header {
@@ -232,22 +232,33 @@ section.fury h2 {
   margin-top: 0;
   font-size: 50px;
 }
-section.fury .images .image {
+section.fury .images .image_v {
   display: block;
   margin-bottom: 25px;
   margin-top: 25px;
 }
-section.fury .images .image:last-child {
+section.fury .images .image_v:last-child {
   margin-bottom: 0;
 }
-section.fury .images .image img {
+section.fury .images .image_v img {
   height: 45vh;
 }
 @media (min-width: 768px) {
-  section.fury .images .image {
+  section.fury .images .image_v {
     display: inline-block;
     margin-bottom: 50px;
   }
+}
+section.fury .images .image_h {
+  display: inline-block;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+section.fury .images .image_h:last-child {
+  margin-bottom: 0;
+}
+section.fury .images .image_h img {
+  width: 90vw;
 }
 @media (min-width: 768px) {
   section.fury h2 {

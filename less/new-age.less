@@ -166,8 +166,8 @@ header {
     .device-container {
         max-width: 300px;
         margin: 0 auto 100px;
-        .screen img {
-            border-radius: 3px;
+        img {
+            border-radius: 4px;
         }
     }
     @media (min-width: 768px) {
@@ -217,7 +217,7 @@ section.fury {
         font-size: 50px;
     }
     .images {
-        .image {
+        .image_v {
             display: block;
             margin-bottom: 25px;
             margin-top: 25px;
@@ -230,6 +230,17 @@ section.fury {
             @media(min-width: 768px) {
                 display: inline-block;
                 margin-bottom: 50px;
+            }
+        } 
+        .image_h {
+            display: inline-block;
+            margin-bottom: 25px;
+            margin-top: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            img {
+                width: 90vw;
             }
         }
     }
