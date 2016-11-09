@@ -231,7 +231,7 @@ section.fury {
                 display: inline-block;
                 margin-bottom: 50px;
             }
-        } 
+        }
         .image_h {
             display: inline-block;
             margin-bottom: 25px;
@@ -240,18 +240,18 @@ section.fury {
                 margin-bottom: 0;
             }
             img {
-                width: 90vw;
+                width: 90%;
             }
         }
-    }
     @media(min-width: 768px) {
-        h2 {
-            font-size: 70px;
+          h2 {
+              font-size: 70px;
+            }
         }
     }
 }
 
-section.features {
+section.author {
     .section-heading {
         h2 {
             margin-top: 0;
@@ -294,20 +294,19 @@ section.features {
     }
 }
 
-section.cta {
+section.book {
     position: relative;
     .background-cover;
     background-position: center;
-    background-image: url('../img/bg-cta.jpg');
-    padding: 250px 0;
-    .cta-content {
+    background-image: url('../img/cover_web.jpg');
+    padding: 350px 0;
+    .book-content {
         position: relative;
         z-index: 1;
         h2 {
             margin-top: 0;
             margin-bottom: 25px;
             color: white;
-            max-width: 450px;
             font-size: 50px;
         }
         @media (min-width: 768px) {
@@ -319,7 +318,7 @@ section.cta {
     .overlay {
         height: 100%;
         width: 100%;
-        background-color: fade(black, 50%);
+        background-color: fade(black, 60%);
         position: absolute;
         top: 0;
         left: 0;
@@ -399,6 +398,10 @@ footer {
             }
         }
     }
+    .banda {
+      width: 100%;
+      height: auto;
+    }
 }
 
 // Bootstrap Overrides
@@ -419,7 +422,7 @@ footer {
 }
 
 // Button Styles
-.btn-outline {
+.btn-outline-black {
     color: black;
     border-color: black;
     border: 1px solid;
@@ -430,6 +433,19 @@ footer {
         color: white;
         background-color: @theme-primary;
         border-color: @theme-primary;
+    }
+}
+.btn-outline-white {
+    color: white;
+    border-color: white;
+    border: 1px solid;
+    &:hover,
+    &:focus,
+    &:active,
+    &.active {
+        color: white;
+        background-color: @theme-primary;
+        border-color: white;
     }
 }
 
