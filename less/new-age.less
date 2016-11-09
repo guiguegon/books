@@ -50,7 +50,7 @@ p {
 // Navigation
 
 .navbar-default {
-    background-color: white;
+    background-color: @theme-secondary;
     border-color: fade(@gray-darker, 5%);
     .transition-all;
     .heading-font;
@@ -96,21 +96,21 @@ p {
         background-color: transparent;
         border-color: transparent;
         .navbar-header .navbar-brand {
-            color: fade(white, 70%);
+            color: fade(black, 70%);
             &:hover,
             &:focus {
-                color: white;
+                color: black;
             }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: fade(white, 70%);
+            color: fade(black, 70%);
             &:hover {
-                color: white;
+                color: black;
             }
         }
         &.affix {
-            background-color: white;
+            background-color: @theme-secondary;
             border-color: fade(@gray-darker, 10%);
             .navbar-header .navbar-brand {
                 color: @gray-darker;
@@ -138,12 +138,12 @@ header {
     min-height: auto;
     overflow-y: hidden;
     background: url("../img/bg-pattern.png"), @theme-secondary; /* fallback for old browsers */
-    background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, @theme-secondary , @theme-tertiary); /* Chrome 10-25, Safari 5.1-6 */
-    background: url("../img/bg-pattern.png"), linear-gradient(to left, @theme-secondary , @theme-tertiary); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: white;
+    background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to top, @theme-secondary , @theme-tertiary, @theme-secondary); /* Chrome 10-25, Safari 5.1-6 */
+    background: url("../img/bg-pattern.png"), linear-gradient(to top, @theme-secondary , @theme-tertiary, @theme-secondary); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: black;
     .header-content {
         text-align: center;
-        padding: 150px 0 50px;
+        padding: 100px 0 50px;
         position: relative;
         .header-content-inner {
             position: relative;
@@ -408,8 +408,8 @@ footer {
 
 // Button Styles
 .btn-outline {
-    color: white;
-    border-color: white;
+    color: black;
+    border-color: black;
     border: 1px solid;
     &:hover,
     &:focus,
