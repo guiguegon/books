@@ -153,6 +153,7 @@ header {
                 margin-top: 0;
                 margin-bottom: 30px;
                 font-size: 30px;
+                font-weight: bold;
             }
             .list-badges {
                 margin-bottom: 25px;
@@ -166,9 +167,6 @@ header {
     .device-container {
         max-width: 300px;
         margin: 0 auto 100px;
-        img {
-            border-radius: 4px;
-        }
     }
     @media (min-width: 768px) {
         min-height: 100%;
@@ -184,6 +182,7 @@ header {
                 transform: translateY(-50%);
                 h1 {
                     font-size: 35px;
+                    font-weight: bold;
                 }
             }
         }
@@ -196,6 +195,7 @@ header {
     @media (min-width: 992px) {
         .header-content .header-content-inner h1 {
             font-size: 50px;
+            font-weight: bold;
         }
     }
 }
@@ -225,7 +225,7 @@ section.fury {
                 margin-bottom: 0;
             }
             img {
-                height: 45vh;
+                width: 34vw;
             }
             @media(min-width: 768px) {
                 display: inline-block;
@@ -240,7 +240,7 @@ section.fury {
                 margin-bottom: 0;
             }
             img {
-                width: 90%;
+                max-width: 100%;
             }
         }
     @media(min-width: 768px) {
@@ -251,46 +251,22 @@ section.fury {
     }
 }
 
-section.author {
-    .section-heading {
-        h2 {
-            margin-top: 0;
-        }
-        p {
-            margin-bottom: 0;
-        }
-        margin-bottom: 100px;
-    }
-    .device-container,
-    .feature-item {
-        max-width: 300px;
+.author-member {
+    text-align: center;
+    margin-bottom: 25px;
+    img {
         margin: 0 auto;
+        width: 250px;
+        height: 250px;
+        border: 4px solid @gray-lighter;
     }
-    .device-container {
-        margin-bottom: 100px;
-        @media(min-width: 992px) {
-            margin-bottom: 0;
-        }
+    h3 {
+        margin-top: 25px;
+        margin-bottom: 0;
+        text-transform: none;
     }
-    .feature-item {
-        text-align: center;
-        margin-bottom: 100px;
-        h3 {
-            font-size: 30px;
-        }
-        i {
-            font-size: 80px;
-              background: -webkit-linear-gradient(to left, @theme-secondary , @theme-tertiary);
-              background: linear-gradient(to left, @theme-secondary , @theme-tertiary);
-              -webkit-background-clip: text;
-              -webkit-text-fill-color: transparent;
-        }
-    }
-    @media(min-width: 992px) {
-        .device-container,
-        .feature-item {
-            max-width: none;
-        }
+    p {
+        margin-top: 12px;
     }
 }
 
@@ -485,4 +461,10 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @gray-darker;
+}
+
+.logo_fgordon {
+  width: 15vw;
+  min-width: 200px;
+  margin-top: 50px;
 }

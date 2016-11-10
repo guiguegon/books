@@ -173,6 +173,7 @@ header .header-content .header-content-inner h1 {
   margin-top: 0;
   margin-bottom: 30px;
   font-size: 30px;
+  font-weight: bold;
 }
 header .header-content .header-content-inner .list-badges {
   margin-bottom: 25px;
@@ -184,9 +185,6 @@ header .header-content .header-content-inner .list-badges img {
 header .device-container {
   max-width: 300px;
   margin: 0 auto 100px;
-}
-header .device-container img {
-  border-radius: 4px;
 }
 @media (min-width: 768px) {
   header {
@@ -206,6 +204,7 @@ header .device-container img {
   }
   header .header-content .header-content-inner h1 {
     font-size: 35px;
+    font-weight: bold;
   }
   header .device-container {
     max-width: none;
@@ -216,6 +215,7 @@ header .device-container img {
 @media (min-width: 992px) {
   header .header-content .header-content-inner h1 {
     font-size: 50px;
+    font-weight: bold;
   }
 }
 section {
@@ -241,7 +241,7 @@ section.fury .images .image_v:last-child {
   margin-bottom: 0;
 }
 section.fury .images .image_v img {
-  height: 45vh;
+  width: 34vw;
 }
 @media (min-width: 768px) {
   section.fury .images .image_v {
@@ -258,54 +258,30 @@ section.fury .images .image_h:last-child {
   margin-bottom: 0;
 }
 section.fury .images .image_h img {
-  width: 90%;
+  max-width: 100%;
 }
 @media (min-width: 768px) {
   section.fury .images h2 {
     font-size: 70px;
   }
 }
-section.author .section-heading {
-  margin-bottom: 100px;
-}
-section.author .section-heading h2 {
-  margin-top: 0;
-}
-section.author .section-heading p {
-  margin-bottom: 0;
-}
-section.author .device-container,
-section.author .feature-item {
-  max-width: 300px;
-  margin: 0 auto;
-}
-section.author .device-container {
-  margin-bottom: 100px;
-}
-@media (min-width: 992px) {
-  section.author .device-container {
-    margin-bottom: 0;
-  }
-}
-section.author .feature-item {
+.author-member {
   text-align: center;
-  margin-bottom: 100px;
+  margin-bottom: 25px;
 }
-section.author .feature-item h3 {
-  font-size: 30px;
+.author-member img {
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+  border: 4px solid #eeeeee;
 }
-section.author .feature-item i {
-  font-size: 80px;
-  background: -webkit-linear-gradient(to left, #e1b4b9, #c7c2c9);
-  background: linear-gradient(to left, #e1b4b9, #c7c2c9);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+.author-member h3 {
+  margin-top: 25px;
+  margin-bottom: 0;
+  text-transform: none;
 }
-@media (min-width: 992px) {
-  section.author .device-container,
-  section.author .feature-item {
-    max-width: none;
-  }
+.author-member p {
+  margin-top: 12px;
 }
 section.book {
   position: relative;
@@ -475,4 +451,9 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
+}
+.logo_fgordon {
+  width: 15vw;
+  min-width: 200px;
+  margin-top: 50px;
 }
