@@ -307,6 +307,14 @@ section.book .book-content h2 {
   color: white;
   font-size: 50px;
 }
+section.book .book-content h3 {
+  color: white;
+  font-size: 16px;
+}
+section.book .book-content h4 {
+  color: white;
+  font-size: 14px;
+}
 @media (min-width: 768px) {
   section.book .book-content h2 {
     font-size: 80px;
