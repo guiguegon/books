@@ -335,8 +335,16 @@ section.contact h2 {
   margin-top: 0;
   margin-bottom: 25px;
 }
-section.contact h2 i {
-  color: #dd4b39;
+section.contact #contact-mail {
+  color: white;
+}
+section.contact #contact-mail:hover {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+section.contact #contact-mail:active {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
 section.contact ul.list-social {
   margin-bottom: 0;
@@ -389,6 +397,17 @@ footer ul li a:hover,
 footer ul li a:focus,
 footer ul li a:active,
 footer ul li a.active {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+footer a {
+  color: rgba(255, 255, 255, 0.3);
+}
+footer a:hover,
+footer a:focus,
+footer a:active,
+footer a.active {
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
 footer .banda {

@@ -319,10 +319,12 @@ section.contact {
     h2 {
         margin-top: 0;
         margin-bottom: 25px;
-        i {
-            color: @brand-google-plus;
         }
-    }
+
+    #contact-mail { color: white;}
+    #contact-mail:hover { color: fade(white, 60%); text-decoration: none;}
+    #contact-mail:active { color: fade(white, 60%); text-decoration: none;}
+
     ul.list-social {
         margin-bottom: 0;
         li {
@@ -382,11 +384,23 @@ footer {
                 &:focus,
                 &:active,
                 &.active {
+                    color: fade(white, 60%);
                     text-decoration: none;
                 }
             }
         }
     }
+    a {
+        color: fade(white, 30%);
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            color: fade(white, 60%);
+            text-decoration: none;
+        }
+    }
+
     .banda {
       width: 100%;
       height: auto;
